@@ -1,0 +1,47 @@
+/* 공통 스타일 */
+.calendar {
+    max-width: 90vw; /* 화면 너비의 90%로 최대 너비 제한 */
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-left: 0; /* 왼쪽 여백 제거 */
+}
+
+.cell {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.export-btn {
+    display: block;
+    margin: 20px auto;
+}
+
+/* 아이폰 화면에 최적화된 스타일 */
+@media only screen and (max-width: 500px) {
+    .calendar {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .calendar-grid {
+        gap: 5px;
+    }
+
+    .cell {
+        padding: 5px;
+    }
+}

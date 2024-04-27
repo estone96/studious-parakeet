@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>월간 달력</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <h1>2024년 5월 달력</h1>
+        </div>
+        <div class="calendar-grid" id="calendarGrid">
+            <!-- 달력 그리드가 여기에 들어갈 것입니다. -->
+        </div>
+        <button onclick="exportToCSV()" class="export-btn">CSV로 내보내기</button>
+        <button onclick="saveToFile()" class="save-btn">Save</button>
+        <input type="file" accept=".json" onchange="loadFromFile(event)" class="load-btn">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
